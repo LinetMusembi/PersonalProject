@@ -1,44 +1,35 @@
-<!DOCTYPE html>
+
+
+ <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="index.css">
+    <title>Quiz Board</title>
     <link rel="stylesheet" href="quiz.css">
-    <title>Quiz board</title>
-    <h2 class="h">Quiz board</h2>
-    <form name="forma" id="quiz">
-        <p id="correct">1.Inside which HTML element do we put the JavaScript?</p>
-        <input type="radio" name="question1" value="js"> A js <br>
-        <input type="radio" name="question1" id="correct1" value="script"> B script <br>
-        <input type="radio" name="question1" value="html"> C html <br>
-        <br>
-        <p>2. An external JavaScript must contain the script tag</p>
-        <input type="radio" name="question2"> A True <br>
-        <input type="radio" name="question2" id="correct2"> B False <br>
-        <br>
-        <p>3. The Web security issues are involved in</p>
-        <input type="radio" name="question3"> A server <br>
-        <input type="radio" name="question3"> B client <br>
-        <input type="radio" name="question3" id="correct3"> C All of the above <br>
-        <br>
-        <p>4. . In HTML, the _____ property/attribute identifies the CGI script that will process a form.</p>
-        <input type="radio" name="question4"> A Value <br>
-        <input type="radio" name="question4"> B Enctype <br>
-        <input type="radio" name="question4" id="correct4"> C Action <br>
-        <br>
-        <p>5. In JavaScript, which of the following is a logical operator?</p>
-        <input type="radio" name="question5"> A /<br>
-        <input type="radio" name="question5"> B || <br>
-        <input type="radio" name="question5" id="correct5"> C && <br>
-        <input class="button" type="submit" name="submit" value="Submit" onclick="resultCheck(),result2()">
-    </form>
-    <script src="index.js"></script>
- </body>
- </html>
+</head>
+<body>
+    <header>
+        <DIV class="header">
+            <h1>Quiz Board</h1>
+        </DIV>
+    </header>
+    <div class="login">
+       <div class="loginp1"> <h2>WELCOME</h2></div>
+        <form id="login-form">
+            <h2>DETAILS</h2>
+            <div class="mb-3">
+                <label for="name" class="form-label"><strong> Name</strong></label>
+                <input type="text" class="form-control" id="name"aria-describedby="emailHelp">
+            </div>
+            <div class="mb-3">
+                <label for="regNo" class="form-label"> <strong>Reg NO.</strong> </label>
+                <input type="text" class="form-control" id="regNo">
+            </div>
+           <a href="/quiz.html"><button type="submit" class="common-btn">submit</button></a>
+        </form>
+    </div>
+    <script src="quiz.js"></script>
+</body>
+</html>
